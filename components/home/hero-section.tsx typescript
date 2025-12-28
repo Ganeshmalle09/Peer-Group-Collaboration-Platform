@@ -1,0 +1,69 @@
+import { Button } from '@/components/ui/button'
+import Link from 'next/link'
+import { ArrowRight, Users, Rocket, Shield } from 'lucide-react'
+
+export default function HeroSection() {
+  return (
+    <div className="relative overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+        <div className="text-center">
+          <h1 className="text-5xl md:text-6xl font-bold tracking-tight">
+            Collaborate with{' '}
+            <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+              Peers
+            </span>
+            <br />
+            Achieve More Together
+          </h1>
+          <p className="mt-6 text-xl text-muted-foreground max-w-3xl mx-auto">
+            A platform where groups collaborate on projects, share knowledge, 
+            and track progress in real-time. Join thousands of peers already collaborating.
+          </p>
+          <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
+            <Link href="/auth">
+              <Button size="lg" className="px-8">
+                Get Started Free
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            </Link>
+            <Link href="/dashboard">
+              <Button size="lg" variant="outline" className="px-8">
+                View Demo
+              </Button>
+            </Link>
+          </div>
+        </div>
+
+        <div className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="text-center">
+            <div className="inline-flex items-center justify-center p-3 bg-blue-100 rounded-full">
+              <Users className="h-8 w-8 text-blue-600" />
+            </div>
+            <h3 className="mt-4 text-lg font-semibold">Smart Groups</h3>
+            <p className="mt-2 text-muted-foreground">
+              Create or join groups based on interests, skills, or projects
+            </p>
+          </div>
+          <div className="text-center">
+            <div className="inline-flex items-center justify-center p-3 bg-purple-100 rounded-full">
+              <Rocket className="h-8 w-8 text-purple-600" />
+            </div>
+            <h3 className="mt-4 text-lg font-semibold">Project Tracking</h3>
+            <p className="mt-2 text-muted-foreground">
+              Manage tasks with Kanban boards and track progress in real-time
+            </p>
+          </div>
+          <div className="text-center">
+            <div className="inline-flex items-center justify-center p-3 bg-green-100 rounded-full">
+              <Shield className="h-8 w-8 text-green-600" />
+            </div>
+            <h3 className="mt-4 text-lg font-semibold">Secure Collaboration</h3>
+            <p className="mt-2 text-muted-foreground">
+              Private groups, encrypted chat, and role-based permissions
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
