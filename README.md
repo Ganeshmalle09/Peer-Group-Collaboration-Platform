@@ -1,7 +1,5 @@
 # Peer Group Collaboration Platform
 
-# Peer Group Collaboration Platform
-
 ## 🎯 Project Overview
 A comprehensive peer-to-peer collaboration platform built with modern web technologies. This application enables users to create and join groups, manage collaborative projects with Kanban boards, share resources, and communicate in real-time. Designed for teams, study groups, and professional communities to work together efficiently.
 
